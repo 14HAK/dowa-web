@@ -1,8 +1,11 @@
 export default function Dowa({ item }) {
-  const { arabic, anubad, uccaron, mohima } = item;
+  const { title, arabic, anubad, uccaron, mohima } = item;
 
   return (
     <div className='p-2 m-9 border rounded-md border-red-600'>
+      <h1 className='font-arabic font-bold p-5 text-3xl text-gray-800 text-right'>
+        {title ? title : ' '}
+      </h1>
       <h1 className='font-arabic p-5 text-4xl text-gray-800 text-right'>
         {arabic}
       </h1>
