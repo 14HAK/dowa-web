@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         arabic: ['Hind Siliguri'],
+        arabic_utman: ['KFGQPC Uthmanic Script HAFS'],
       }, //end of fontFamily
     },
   },
