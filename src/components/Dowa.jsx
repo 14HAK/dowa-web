@@ -1,8 +1,8 @@
 export default function Dowa({ item }) {
-  const { title, arabic, anubad, uccaron, mohima } = item;
+  const { title, arabic, onlyBangla, anubad, uccaron, mohima } = item;
 
   return (
-    <div className='p-2 border rounded-md border-red-600'>
+    <div className='p-2 mb-2 border rounded-md border-red-600'>
       {title ? (
         <h1 className='font-arabic font-bold p-5 text-3xl text-gray-800 text-right'>
           {title}
@@ -17,8 +17,15 @@ export default function Dowa({ item }) {
       ) : (
         ''
       )}
+      {onlyBangla ? (
+        <h1 className='font-arabic p-5 text-xl text-gray-800 leading-relaxed'>
+          {onlyBangla}
+        </h1>
+      ) : (
+        ''
+      )}
       {anubad ? (
-        <h2 className='text-xl p-2 text-left text-gray-600'>
+        <h2 className='text-xl font-arabic p-2 text-left text-gray-600'>
           <span className='font-semibold'>অর্থঃ </span>
           {anubad}
         </h2>
@@ -26,7 +33,7 @@ export default function Dowa({ item }) {
         ' '
       )}
       {uccaron ? (
-        <h2 className='text-xl p-2 text-left text-gray-600'>
+        <h2 className='text-xl font-arabic p-2 text-left text-gray-600'>
           <span className='font-semibold'>উচ্চারণঃ </span>
           {uccaron}
         </h2>
@@ -34,7 +41,7 @@ export default function Dowa({ item }) {
         ' '
       )}
       {mohima ? (
-        <h2 className='text-xl p-4 border rounded-md border-gray-600 text-left text-gray-600'>
+        <h2 className='text-xl font-arabic p-4 border rounded-md border-gray-600 text-left text-gray-600'>
           {`${mohima}`}
         </h2>
       ) : (
