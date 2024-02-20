@@ -18,7 +18,7 @@ export default function Dowa({ item }) {
         ''
       )}
       {onlyBangla ? (
-        <h1 className='font-arabic p-5 text-xl text-gray-800 leading-relaxed'>
+        <h1 className='font-arabic p-2 text-xl text-gray-800 leading-relaxed'>
           {onlyBangla}
         </h1>
       ) : (
