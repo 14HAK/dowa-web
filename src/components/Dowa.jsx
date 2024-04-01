@@ -1,11 +1,18 @@
 export default function Dowa({ item }) {
-  const { title, arabic, onlyBangla, anubad, uccaron, mohima } = item;
+  const { title, arabic, onlyBangla, anubad, uccaron, mohima, subTitle } = item;
 
   return (
     <div className='p-2 mb-2 border rounded-md border-red-600'>
       {title ? (
-        <h1 className='font-arabic font-bold p-5 text-3xl text-gray-800 text-right'>
+        <h1 className='font-arabic font-bold p-5 text-4xl underline text-gray-800 text-center'>
           {title}
+        </h1>
+      ) : (
+        ' '
+      )}
+      {subTitle ? (
+        <h1 className='font-arabic font-semibold p-5 text-2xl text-gray-800 text-right'>
+          {subTitle}
         </h1>
       ) : (
         ' '
